@@ -1,0 +1,32 @@
+{
+  "name": "drupal-auth-client",
+  "version": "0.4.0",
+  "description": "Drupal Auth Client",
+  "keywords": [
+    "auth",
+    "drupal"
+  ],
+  "main": "dist/index.js",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "bundlesize": [
+    {
+      "path": "./dist/index.js"
+    }
+  ],
+  "scripts": {
+    "prepublish": "yarn build",
+    "build": "rm -rf dist && tsc -d"
+  },
+  "author": "Octahedroid <opensource@octahedroid.com>",
+  "repository": {
+    "url": "https://github.com/octahedroid/drupal-decoupled/tree/main/packages/drupal-auth-client"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.12.12",
+    "typescript": "^5.4.5"
+  }
+}
